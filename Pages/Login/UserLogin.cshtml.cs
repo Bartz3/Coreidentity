@@ -39,6 +39,7 @@ namespace CoreIdentity.Pages.Login
                ClaimsPrincipal(claimsIdentity));
                 return RedirectToPage(returnUrl);
             }
+            ViewData["Message"] = "Niepoprawne dane";
             return Page();
         }
 

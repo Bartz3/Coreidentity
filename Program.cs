@@ -15,9 +15,8 @@ builder.Services.AddAuthentication("CookieAuthentication")
 
 builder.Services.AddRazorPages(options =>
 {
-    options.Conventions.AuthorizeFolder("/Admin");
+    options.Conventions.AuthorizeFolder("/admin");
 });
-
 
 var app = builder.Build();
 
